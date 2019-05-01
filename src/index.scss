@@ -25,3 +25,12 @@ code {
 .outline {
   border: 2px solid black;
 }
+
+.plantList {
+  border: 2px solid hsl(141, 71%, 48%);
+}
+
+li :hover {
+  background-color: hsl(48, 100%, 67%) !important;
+  
+}

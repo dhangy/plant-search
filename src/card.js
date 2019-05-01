@@ -2,8 +2,9 @@ import React from 'react';
 
 export const Card = (props) => {
     let photo = require(`${props.plant.photo}`);
-    let contentTitle = "title has-text-centered is-size-5 has-text-white has-text-weight-bold";
-    let contentSubtitle = "subtitle has-text-centered has-text-white is-size-6"
+    let contentTitle = "title has-text-centered is-size-5 has-text-warning has-text-weight-bold";
+    let contentSubtitle = "subtitle has-text-centered has-text-white is-size-6";
+    let cardTitle = "title has-text-centered has-text-white is-size-2 is-family-code";
 
     return (
         <div className="card has-background-success">
@@ -14,7 +15,7 @@ export const Card = (props) => {
             </div>
             <div className="media">
                 <div className="media-content">
-                <p className="title has-text-centered has-text-white is-size-2">{props.plant.name}</p>
+                <p className={cardTitle}>{props.plant.name}</p>
                 </div>
             </div>
             <div className="card-content">

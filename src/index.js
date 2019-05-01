@@ -6,6 +6,7 @@ import { Search } from "./search.js";
 import { Plants } from "./plants.js";
 import { Card } from './card.js';
 import { Message } from './message.js';
+import { Navbar } from './navbar';
 
 export class App extends React.Component { 
     constructor(props){
@@ -35,6 +36,7 @@ export class App extends React.Component {
     render() {
         return (
             <div>
+                <div><Navbar /></div>
                 <section className="section">
                     <div className="columns">
                         <div className="column"></div>
